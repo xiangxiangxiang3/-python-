@@ -1,0 +1,5 @@
+import math 
+
+def computCost(x,y,theta):
+    inner = np.power(((x*theta.T)-y),2)
+    return sum(inner)/(2*len(x))
